@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:ital@1&family=Mulish:ital,wght@1,200&family=Raleway&family=Roboto:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark:#562088;
+    --background: #ffe9db;
+}
+
+html{
+    font-size: 62.5%;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* background-color: #349179; */
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+main{
+    width: 30vw;
+    height: 95vh;
+    text-align: center;
+    background-color: var(--background);
+    border: solid var(--dark);
+    border-width: 0.3rem ;
+    border-radius: 1rem;
+    padding: 8rem 5rem;
+    color: #913463;
+    
+}
+
+h2{
+    font-size: 2.1rem;
+    margin: 2rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+.image{
+    width: 90%;
+    max-height: 22rem;
+    height: auto;
+    margin: 1rem 0 4rem 0;
+}
+
+.button-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+button{
+    min-width: 28rem;
+    background-image: linear-gradient(
+        92.88deg,
+        #c84eea 9.16%,
+        #c13ce9 43.89%,
+        #c70de8 64.72%
+    );
+    border-radius: .8rem;
+    border-style: none;
+    /* box-sizing: border-box; */
+    color: #ffffff;
+    cursor: pointer;
+    padding: 2.5rem 6rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all 0.5s;
+    -webkit-user-select: none;
+    user-select: none;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button:hover{
+    /* box-shadow: rgba(22, 10, 118, 0.2) 0 100px 300px;
+    transition-duration: 3s; */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:last-child{
+    background: var(--dark);
+    margin-bottom: 0;
+}
+
+
+/* Our game area */
+
+#gameArea{
+    /* height: 40vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newGameButton button{
+    margin: 2rem 0;
+
+}
+
+input{
+    border: .1rem solid rgba(221, 21, 165, 0.716);
+    background: transparent;
+    margin: 4rem 0;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.stats{
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.info span{
+    font-size: 2rem;
+    color: red;
+}
